@@ -1,0 +1,8 @@
+<h2 class="subtitle">Offered services</h2>
+
+<ul class="list">
+  <li class="list__item" *ngFor="let service of services">
+    <mcrai-icon class="list__item-icon" color="call">{{ service.icon }}</mcrai-icon>
+    <span class="list__item-name">{{ service.name }}</span>
+  </li>
+</ul>

@@ -1,0 +1,75 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  display: none;
+
+  @media (min-height: $breakpoint-1) {
+    display: block;
+    font-size: rem(80);
+    margin: 0 auto;
+  }
+
+  @media (min-height: $breakpoint-3) {
+    font-size: rem(110);
+  }
+
+  @media (min-height: $breakpoint-4) {
+    font-size: rem(140);
+  }
+}
+
+.tagline {
+  text-align: center;
+  color: map-get($theme, primary-text);
+  font-size: rem(50);
+  max-width: 90%;
+  letter-spacing: rem(12);
+  margin: rem(20) 0;
+  line-height: 1.3;
+  padding-left: rem(15);
+
+  @media (min-width: $breakpoint-1) {
+    max-width: rem(500);
+    padding-left: rem(25);
+  }
+
+  @media (min-height: $breakpoint-3) {
+    max-width: rem(660);
+    font-size: rem(80);
+    letter-spacing: rem(26);
+    margin-bottom: rem(20);
+  }
+
+  @media (min-height: $breakpoint-4) {
+    margin: rem(50) 0 rem(80) 0;
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+.button--work {
+  height: rem(65) !important;
+  padding: 0 rem(120) !important;
+  letter-spacing: rem(5);
+  margin: rem(40) 0 rem(75) 0;
+
+  @media (min-height: $breakpoint-3) {
+    height: rem(75) !important;
+  }
+
+}

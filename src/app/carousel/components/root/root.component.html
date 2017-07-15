@@ -1,0 +1,21 @@
+<div class="wrapper" #wrapper>
+  <ng-content></ng-content>
+  <button
+    class="move move--left"
+    *ngIf="!start"
+    (mouseenter)="startSliding(false)"
+    (mouseleave)="stopSliding()"
+    color="primary"
+    mcrai-flat-button>
+    <mcrai-icon class="icon">arrow_left</mcrai-icon>
+  </button>
+  <button
+    class="move move--right"
+    *ngIf="!end"
+    (mouseenter)="startSliding(true)"
+    (mouseleave)="stopSliding()"
+    color="primary"
+    mcrai-flat-button>
+    <mcrai-icon class="icon">arrow_right</mcrai-icon>
+  </button>
+</div>

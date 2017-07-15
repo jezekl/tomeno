@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  onSwipeLeft() {
+    console.log('left');
+  }
+
+  onSwipeDown() {
+    console.log('down');
+  }
 }

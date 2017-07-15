@@ -1,0 +1,91 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: rem(420);
+  margin-right: rem(60);
+
+  @media (min-height: $breakpoint-3) {
+    height: rem(520);
+  }
+
+  @media (min-height: $breakpoint-4) {
+    height: rem(620);
+  }
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.item--description {
+  display: block;
+  width: rem(600);
+  padding: 0;
+
+  @media (min-width: $breakpoint-3) {
+    padding: 0 rem(80);
+    width: rem(1024);
+  }
+}
+
+.text {
+  padding: 0 rem(40);
+
+  @media (min-width: $breakpoint-3) {
+    padding: 0 rem(80);
+  }
+}
+
+iframe {
+  border: 0;
+}
+
+.title {
+  font-size: rem(46);
+  line-height: 1.2;
+  letter-spacing: rem(14);
+
+  @media (min-width: $breakpoint-4) {
+    font-size: rem(84);
+    letter-spacing: rem(26);
+  }
+}
+
+.subtitle {
+  margin-top: rem(20);
+  color: map-get($theme, secondary-text);
+}
+
+.button { }
+
+.button--visite-website {
+  margin-top: rem(20);
+}
+
+.button--back {
+  margin-top: rem(60);
+  text-transform: none;
+  color: map-get($theme, secondary-text);
+
+  @media (min-height: $breakpoint-3) {
+    margin-top: rem(40);
+  }
+}
+
+.icon--back {
+  margin-right: rem(10);
+}

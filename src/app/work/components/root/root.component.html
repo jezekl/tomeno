@@ -1,0 +1,12 @@
+<app-horizontal-slider [state]="side">
+  <app-slide class="slide">
+    <app-carousel>
+      <app-reference
+        *ngFor="let reference of references"
+        [reference]="reference"></app-reference>
+    </app-carousel>
+  </app-slide>
+  <app-slide class="slide">
+    <app-reference-detail *ngIf="activeRoute" [name]="activeRoute"></app-reference-detail>
+  </app-slide>
+</app-horizontal-slider>

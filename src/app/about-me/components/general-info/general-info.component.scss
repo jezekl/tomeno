@@ -1,0 +1,34 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+}
+
+.title {
+  font-size: rem(46);
+  letter-spacing: rem(14);
+
+  @media (min-width: $breakpoint-4) {
+    font-size: rem(84);
+    letter-spacing: rem(26);
+  }
+}
+
+.text {
+  @media (min-width: $breakpoint-4) {
+    max-width: rem(900);
+    padding: 0 rem(80);
+    text-align: left;
+  }
+}
+
+.text__part-1 { }
+
+.text__part-2 {
+  display: none;
+
+  @media (min-width: $breakpoint-4) {
+    display: block;
+  }
+}

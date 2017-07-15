@@ -1,0 +1,54 @@
+@import "../../../../scss/_variables";
+@import "../../../../scss/_functions";
+
+:host {
+  display: block;
+  flex: 0 0 auto;
+  height: rem(450);
+  width: rem(258);
+  margin-right: rem(30);
+  background: no-repeat bottom center;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+
+  @media (min-height: $breakpoint-3) {
+    height: rem(550);
+    width: rem(315);
+  }
+
+  @media (min-height: $breakpoint-4) {
+    height: rem(680);
+    width: rem(390);
+  }
+
+  &:hover {
+    background-position: top center;
+  }
+}
+
+.link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  padding: rem(40) rem(20);
+}
+
+.title {
+  font-family: map-get($theme, secondary-font-family);
+  color: map-get($theme, primary-color);
+  font-size: rem(40);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: rem(4);
+  font-weight: normal;
+  margin: 0 0 rem(35) 0;
+}
+
+.subtitle {
+  font-family: map-get($theme, primary-font-family);
+  color: map-get($theme, primary-text);
+  font-weight: 300;
+  font-size: rem(16);
+  letter-spacing: rem(2);
+}

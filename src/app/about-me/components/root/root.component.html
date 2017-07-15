@@ -1,0 +1,18 @@
+<app-horizontal-slider [state]="side">
+  <app-slide class="slide slide--left line-right">
+    <app-general-info></app-general-info>
+    <button
+      class="change-side change-side--right"
+      (click)="changeSide(true)"
+      color="primary"
+      mcrai-border-button>Offered services</button>
+  </app-slide>
+  <app-slide class="slide slide--right line-left">
+    <app-offered-services></app-offered-services>
+    <button
+      class="change-side change-side--left"
+      (click)="changeSide(false)"
+      color="primary"
+      mcrai-border-button>About me</button>
+  </app-slide>
+</app-horizontal-slider>

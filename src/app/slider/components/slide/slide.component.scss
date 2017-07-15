@@ -1,0 +1,9 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  position: relative;
+}

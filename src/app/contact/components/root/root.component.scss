@@ -1,0 +1,37 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+  padding: rem(140) 0 rem(40) 0;
+  background: map-get($theme, page-color) url('../../../../assets/images/bg-contact.jpg') no-repeat bottom center;
+  background-size: cover;
+  height: 100%;
+
+  @media (min-height: $breakpoint-3) {
+    padding-top: rem(190);
+  }
+
+  @media (min-height: $breakpoint-5) {
+    padding-top: rem(240);
+  }
+}
+
+.contact {
+  margin: rem(50) rem(100) 0 rem(40);
+
+  @media (min-width: $breakpoint-5) {
+    margin-left: rem(100);
+    padding-left: rem(40);
+  }
+}
+
+.title {
+  font-size: rem(46);
+  letter-spacing: rem(14);
+
+  @media (min-width: $breakpoint-4) {
+    font-size: rem(84);
+    letter-spacing: rem(26);
+  }
+}

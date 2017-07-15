@@ -1,0 +1,59 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  align-self: stretch;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  height: 100%;
+}
+
+.list__item {
+  margin: 0 rem(2);
+}
+
+.list__link {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  color: map-get($theme, primary-text);
+  text-transform: uppercase;
+  padding: 0 rem(5);
+  font-family: 'Quantico', sans-serif;
+  font-size: rem(15);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+  margin: 0 rem(5);
+
+  &:hover, &.active {
+    .list__line {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $breakpoint-1) {
+    margin: 0 rem(10);
+  }
+
+  @media (min-width: $breakpoint-2) {
+    padding: 0 rem(10);
+    margin: 0 rem(20);
+  }
+}
+
+.list__line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  margin: auto;
+  height: rem(1);
+  width: 0;
+  background-color: map-get($theme, primary-color);
+  transition: width 200ms;
+}

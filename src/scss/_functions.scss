@@ -1,0 +1,3 @@
+@function rem($target) {
+  @return #{$target/$base-font-size}rem;
+}

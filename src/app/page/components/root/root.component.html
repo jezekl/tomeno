@@ -1,0 +1,18 @@
+<app-intro class="line-bottom" *ngIf="showIntro"></app-intro>
+
+<app-header></app-header>
+
+<app-vertical-slider [state]="route">
+  <app-slide>
+    <app-home class="line-bottom"></app-home>
+  </app-slide>
+  <app-slide>
+    <app-about-me class="motto"></app-about-me>
+  </app-slide>
+  <app-slide>
+    <app-work class="motto"></app-work>
+  </app-slide>
+  <app-slide>
+    <app-contact class="motto"></app-contact>
+  </app-slide>
+</app-vertical-slider>

@@ -12,7 +12,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^4.0.0",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/core": "^4.0.0",
@@ -21,11 +20,15 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
+    "@mcrai/ui": "git+https://bitbucket.org/Guddrog/ui.git",
     "core-js": "^2.4.1",
+    "hammerjs": "^2.0.8",
     "rxjs": "^5.1.0",
+    "web-animations-js": "^2.2.5",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
+    "@angular/animations": "^4.2.5",
     "@angular/cli": "1.2.0",
     "@angular/compiler-cli": "^4.0.0",
     "@angular/language-service": "^4.0.0",

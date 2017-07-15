@@ -1,0 +1,63 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-4) {
+    justify-content: center;
+  }
+}
+
+.subtitle {
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: rem(30) auto 0 auto;
+
+  @media (min-width: $breakpoint-4) {
+    margin-top: rem(50);
+  }
+}
+
+.list__item {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: rem(20) 0;
+  width: 100%;
+
+  @media (min-width: $breakpoint-4) {
+    width: 33.3333%;
+  }
+}
+
+.list__item-icon {
+  display: none;
+  font-size: rem(80);
+
+  @media (min-width: $breakpoint-4) {
+    display: block;
+  }
+}
+
+.list__item-name {
+  text-transform: uppercase;
+  letter-spacing: rem(4);
+
+  @media (min-width: $breakpoint-4) {
+    font-size: rem(18);
+    margin: rem(30) 0;
+  }
+}

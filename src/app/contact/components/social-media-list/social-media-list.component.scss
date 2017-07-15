@@ -1,0 +1,38 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+  margin-top: rem(30);
+
+  @media (min-height: $breakpoint-2) {
+    margin-top: rem(60);
+  }
+}
+
+.list {
+  display: flex;
+  list-style: none;
+}
+
+.item {
+  margin-right: rem(30);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: rem(20);
+
+  &:before {
+    transition: color 150ms;
+  }
+
+  &:hover {
+    &:before {
+      color: map-get($theme, primary-text);
+    }
+  }
+}

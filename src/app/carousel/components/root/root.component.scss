@@ -1,0 +1,46 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+  overflow: hidden;
+  padding-left: rem(30);
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  padding: rem(40) rem(30);
+  overflow-x: auto;
+  margin-bottom: rem(-20);
+}
+
+.move {
+  visibility: hidden;
+
+  @media (min-width: $breakpoint-3) {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    padding: 0;
+    min-width: rem(45);
+    line-height: 1;
+  }
+}
+
+.move--left {
+  left: rem(20);
+}
+
+.move--right {
+  right: rem(20);
+}
+
+.icon {
+  width: rem(30);
+  height: rem(30);
+  font-size: rem(30);
+}

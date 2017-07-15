@@ -1,0 +1,30 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+}
+
+.list {
+  margin-top: rem(30);
+}
+
+.list__term {
+  font-size: rem(14);
+  color: map-get($theme, secondary-text);
+  margin-top: rem(15);
+}
+
+.list__description {
+  margin-top: rem(5);
+}
+
+.list__link {
+  text-decoration: none;
+  color: map-get($theme, primary-text);
+  transition: color 150ms;
+
+  &:hover {
+    color: map-get($theme, call-text);
+  }
+}

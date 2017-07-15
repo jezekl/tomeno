@@ -1,0 +1,28 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: map-get($theme, page-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: rem(250);
+}
+
+.hint {
+  margin-top: rem(30);
+
+  @media (min-width: $breakpoint-3) {
+    display: none;
+  }
+}

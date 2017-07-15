@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico|Rubik:300,400,500&subset=latin-ext');
+
+$base-font-size:   10;
+$page-width:       1000px;
+
+$breakpoint-9: 1920px;
+$breakpoint-8: 1440px;
+$breakpoint-7: 1366px;
+$breakpoint-6: 1280px;
+$breakpoint-5: 1024px;
+$breakpoint-4: 900px;
+$breakpoint-3: 768px;
+$breakpoint-2: 640px;
+$breakpoint-1: 480px;
+$breakpoint-0: 360px;
+
+$theme: (
+  primary-text:      rgb(255, 255, 255),
+  secondary-text:    rgb(115, 115, 115),
+  alternative-text:  rgb(115, 115, 115),
+  button-text:       rgb(255, 255, 255),
+  call-text:         rgb(226, 158, 59),
+
+  primary-font-family:   'Rubik',
+  secondary-font-family: 'Quantico',
+
+  primary-color:     rgb(226, 158, 59),
+  secondary-color:   rgb(226, 158, 59),
+  alternative-color: rgb(226, 158, 59),
+
+  input-background:  rgb(255, 255, 255),
+  input-outline:     rgb(255, 255, 255),
+
+  success-color:     rgb(11, 204, 116),
+  error-color:       rgb(223, 12, 81),
+  info-color:        rgb(59, 106, 169),
+  warning-color:     rgb(222, 187, 39),
+
+  page-color:        rgb(27, 27, 27),
+  block-color:       rgb(255, 255, 255),
+  header-color:      rgba(0, 0, 0, 0),
+  footer-color:      rgba(0, 0, 0, 0),
+  navigation-color:  rgba(0, 0, 0, 0)
+);

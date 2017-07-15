@@ -1,0 +1,24 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  padding: rem(100) 0 rem(40) 0;
+  position: relative;
+
+  @media (min-height: $breakpoint-3) {
+    padding-top: rem(120);
+  }
+}
+
+.button {
+  position: absolute;
+  top: rem(130);
+  left: rem(20);
+  z-index: 2;
+}

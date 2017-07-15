@@ -1,0 +1,55 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: block;
+}
+
+.slide {
+  padding: rem(140) 0 rem(40) 0;
+  position: relative;
+
+  @media (min-height: $breakpoint-3) {
+    padding-top: rem(190);
+  }
+
+  @media (min-height: $breakpoint-4) {
+    padding-top: rem(240);
+  }
+}
+
+.change-side {
+  position: absolute;
+  margin: auto;
+  height: rem(65) !important;
+  width: rem(300) !important;
+  padding: 0 rem(40) !important;
+  letter-spacing: rem(5);
+
+  top: auto;
+  right: 0;
+  bottom: rem(20);
+  left: 0;
+
+  @media (min-width: $breakpoint-4) {
+    transform: rotate(-90deg);
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: auto;
+  }
+}
+
+.change-side--left {
+  @media (min-width: $breakpoint-4) {
+    left: 0;
+    margin-left: rem(-40);
+  }
+}
+
+.change-side--right {
+  @media (min-width: $breakpoint-4) {
+    right: 0;
+    margin-right: rem(-40);
+  }
+}

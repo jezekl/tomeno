@@ -1,0 +1,8 @@
+<ul class="list">
+  <li class="list__item" *ngFor="let link of navigation">
+    <a [routerLink]="link.url" routerLinkActive="active" class="list__link">
+      {{ link.name }}
+      <div class="list__line"></div>
+    </a>
+  </li>
+</ul>

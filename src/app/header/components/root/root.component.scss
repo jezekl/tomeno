@@ -1,0 +1,36 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/functions";
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background: transparent;
+  border-bottom: rem(1) solid rgba(255, 255, 255, .15);
+
+  height: rem(90);
+  @media (min-height: $breakpoint-3) {
+    height: rem(110);
+  }
+}
+
+.logo {
+  cursor: pointer;
+  position: absolute;
+  left: rem(40);
+  text-decoration: none;
+  display: none;
+
+  @media (min-width: $breakpoint-2) {
+    display: block;
+  }
+}
+
+.logo__icon {
+  font-size: rem(54);
+}

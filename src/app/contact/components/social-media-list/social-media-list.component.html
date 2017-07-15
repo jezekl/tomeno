@@ -1,0 +1,7 @@
+<ul class="list">
+  <li class="item" *ngFor="let site of sites">
+    <a class="link" [href]="site.url">
+      <mcrai-icon class="icon" color="secondary">{{ site.icon }}</mcrai-icon>
+    </a>
+  </li>
+</ul>
